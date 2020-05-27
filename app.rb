@@ -19,8 +19,6 @@ end
 
 DataMapper.finalize
 
-#class HelloWorldApp < Sinatra::Base
-
   configure do
     enable :sessions     # set :sessions, true
     set :won, 0
@@ -122,4 +120,3 @@ DataMapper.finalize
     not_found do
       "This page does not exist."
     end
-#end
