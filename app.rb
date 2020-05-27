@@ -29,12 +29,7 @@ class HelloWorldApp < Sinatra::Base
   end
 
   get '/' do
-    redirect '/character-sheet'
-  end
-
-  get '/character-sheet' do
-    session[:charisma]=3
-    erb :test
+    redirect '/login'
   end
 
   get '/login' do
