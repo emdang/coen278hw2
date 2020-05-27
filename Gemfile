@@ -1,6 +1,9 @@
-source 'https://rubygems.org'
-
-gem 'sinatra'
-gem 'dm-core'
-gem 'dm-migrations'
-gem 'rack'
+source :rubygemsgem "sinatra"
+gem "erb"
+gem "sass"
+gem "dm-core"
+gem "dm-migrations"
+gem "thin"
+gem "pg"
+gem "dm-postgres-adapter"
+gem "dm-sqlite-adapter", :group => :development

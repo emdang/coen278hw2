@@ -1,4 +1,5 @@
 # config.ru
+require 'rack'
 require './app'
 
-run HelloWorldApp
+run Sinatra::Application
