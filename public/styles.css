@@ -1,0 +1,68 @@
+/*outline-color: #187396*/
+
+  body {
+    background: white;
+    font-family:arial;
+    outline-width: 2px;
+    outline-color: #187396;
+    outline-style:solid;
+  }
+  h1   {
+    background: lightgray;
+    font-size:20px;
+    padding:20px;
+  }
+  h2{
+    font-size:20px;
+  }
+  .form{
+    padding-left:20px;
+    display:inline-block;
+    width:auto;
+
+  }
+  .sidebar{
+    display:inline-block;
+    vertical-align:top;
+    outline-width: 2px;
+    outline-color: #187396;
+    outline-style: solid;
+    padding:10px;
+    width:auto;
+    margin-left:20px;
+  }
+  input{
+    outline-width:  1px;
+    outline-color: #187396;
+    outline-style:solid;
+    color:black;
+    background-color: white;
+    box-shadow: none;
+  }
+  .submit{
+    background-color:white;
+    color:black;
+  }
+  .account{
+    margin-left:20px;
+    margin-bottom:20px;
+  }
+  table{
+    margin-top: 15px;
+    outline-width: 2px;
+    outline-color: #187396;
+    outline-style:solid;
+  }
+  td{
+    text-align:center;
+    padding:10px;
+  }
+  .session{
+    outline-width: 1px;
+    outline-color: #187396;
+    outline-style:solid;
+  }
+
+  .logout{
+    margin-left:20px;
+  }

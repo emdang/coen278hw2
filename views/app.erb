@@ -1,0 +1,22 @@
+<html>
+
+  <head>
+    <title>Emily Dang</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1>Gambling Site</h1>
+    <form class="form" action="/login" method="POST">
+      <h2>User</h2><input class="login" type="text" name="username"> <br>
+      <h2>Password</h2><input class="login" type="password" name="password"><br><br>
+      <input class="submit" type="submit" value="Login"><br>
+      <% if session[:message] %>
+         <p><%= session[:message] %>
+         <% session[:message] = nil%>
+         <% end %>
+   </form>
+
+
+  </body>
+</html>

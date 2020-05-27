@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Emily Dang</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+      <h1>Gambling Site <%=session[:id]%></h1>
+        <form class="form" action="/bet" method="POST">
+          Place a bet on a number 1-6<br>
+          <br>
+          bet money <input class="bet" type="number" name="bet"><br>
+          <br>
+          on <input class="number" type="number" name="number"><br>
+          <% if session[:message] %>
+             <p><%= session[:message]%><p>
+          <% else%>
+            <br>
+          <% end %>
+          <input class="submit" type="submit" value="bet"><br>
+        </form>
+        <div class="sidebar">
+          Total Win<br>
+          <div class="session">
+           <p><%= session[:won].to_s %><p>
+          </div>
+          Total Loss<br>
+          <div class="session">
+           <p><%= session[:lost].to_s %><p>
+          </div>
+          Total Profit<br>
+          <div class="session">
+           <p><%= session[:profit].to_s %><p>
+          </div>
+        </div>
+        <div class="account">
+          <p>Account</p>
+          <table>
+            <td>
+              Total Win<br>
+              <div class="session">
+               <p><%= session[:dbWin] %><p>
+              </div>
+            </td>
+            <td>
+              Total Lost<br>
+              <div class="session">
+               <p><%= session[:dbLost] %><p>
+              </div>
+            </td>
+            <td>
+              Total Profit<br>
+              <div class="session">
+               <p><%= session[:dbProfit]%><p>
+              </div>
+            </td>
+          </table>
+        </div>
+    <form class="logout" action="/logout" method="POST">
+        <input class="submit" type="submit" value="Logout"><br>
+    </form>
+  </body>
+</html>
