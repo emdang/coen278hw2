@@ -20,12 +20,7 @@ end
 DataMapper.finalize
 
 class HelloWorldApp < Sinatra::Base
-  configure :development do    
-    #setup sqlite database
-  end
-  configure :production do
-    #setup ENV[...]  database
-  end
+
   configure do
     enable :sessions     # set :sessions, true
     set :won, 0
@@ -35,6 +30,11 @@ class HelloWorldApp < Sinatra::Base
 
   get '/' do
     redirect '/login'
+  end
+
+  get '/character-sheet' do
+    session[:charisma]=3
+    erb :test
   end
 
   get '/login' do
