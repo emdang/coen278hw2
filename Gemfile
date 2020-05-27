@@ -1,4 +1,5 @@
-source :rubygemsgem "sinatra"
+source :rubygems
+gem "sinatra"
 gem "erb"
 gem "sass"
 gem "dm-core"
