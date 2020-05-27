@@ -20,7 +20,12 @@ end
 DataMapper.finalize
 
 class HelloWorldApp < Sinatra::Base
-
+  configure :development do    
+    #setup sqlite database
+  end
+  configure :production do
+    #setup ENV[...]  database
+  end
   configure do
     enable :sessions     # set :sessions, true
     set :won, 0
